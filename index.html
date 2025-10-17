@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SATAHA – Wir sind bald für Sie da</title>
+  <meta name="description" content="SATAHA – Innovative Produkte für Lifestyle, Sport & Technik. Wir sind bald für Sie da. Kontakt & Impressum." />
+  <style>
+    :root{
+      --bg:#0b1220; --panel:#0f172a; --muted:#94a3b8; --text:#e5e7eb; --accent:#22d3ee; --accent2:#38bdf8;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 800px at 10% 10%, rgba(56,189,248,.18), transparent),
+        radial-gradient(1000px 700px at 90% 90%, rgba(34,211,238,.16), transparent),
+        var(--bg);
+      line-height:1.6;
+    }
+    header{
+      max-width:1100px;margin:0 auto;padding:32px 20px 0;
+      display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+    }
+    .brand{
+      display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text);
+    }
+    .brand img{width:54px;height:54px;object-fit:contain;filter: drop-shadow(0 6px 16px rgba(0,0,0,.4));}
+    .brand h1{font-size:clamp(1.6rem,1.2rem + 1.2vw,2.2rem);margin:0}
+    .tag{color:var(--muted);margin-left:.5rem;font-weight:500}
+    main{max-width:1100px;margin:0 auto;padding:20px}
+    .hero{
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:20px;padding:28px; margin-top:14px;
+      display:grid;grid-template-columns:1fr;gap:18px;
+    }
+    .hero h2{font-size:clamp(1.4rem,1rem + 1.4vw,2rem);margin:0 0 6px 0}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .btn{
+      display:inline-block;padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.14);
+      text-decoration:none;color:var(--text);font-weight:600;
+      transition:transform .08s ease, background .2s ease, border-color .2s ease;
+    }
+    .btn:hover{transform:translateY(-1px);background:rgba(255,255,255,.06);border-color:rgba(56,189,248,.5)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
+    .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:16px}
+    .label{color:var(--muted);font-size:.95rem}
+    .value{margin-top:4px}
+    .impressum{margin-top:28px}
+    .impressum h3{margin:0 0 8px 0}
+    footer{max-width:1100px;margin:0 auto;padding:22px 20px 48px;color:var(--muted);text-align:center}
+    nav a{color:var(--text);opacity:.9;text-decoration:none;margin-right:14px}
+    nav a:hover{opacity:1;text-decoration:underline}
+    @media (min-width:800px){
+      .hero{grid-template-columns:auto 1fr}
+      .logo-big{justify-self:center}
+    }
+    .logo-big img{width:min(220px,60vw);height:auto;border-radius:18px;background:rgba(255,255,255,.02);padding:14px;border:1px solid rgba(255,255,255,.08)}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="#top">
+      <img src="./logo.png" alt="SATAHA Logo" />
+      <div>
+        <h1>SATAHA</h1>
+        <div class="tag">Productive Commerce · Lifestyle · Sport · Technik</div>
+      </div>
+    </a>
+    <nav style="margin-left:auto;">
+      <a href="#kontakt">Kontakt</a>
+      <a href="#impressum">Impressum</a>
+    </nav>
+  </header>
+
+  <main id="top" role="main">
+    <section class="hero" aria-label="Coming Soon">
+      <div class="logo-big"><img src="./logo.png" alt="SATAHA Markenlogo"></div>
+      <div>
+        <h2>🚀 Wir sind bald für Sie da!</h2>
+        <p>Wir bauen gerade unseren Online‑Shop für hochwertige, preislich faire Produkte aus den Bereichen Lifestyle, Sport & Technik. Bleiben Sie dran – Launch folgt in Kürze.</p>
+        <div class="cta" id="kontakt">
+          <a class="btn" href="mailto:info@sataha.de">E‑Mail: info@sataha.de</a>
+          <a class="btn" href="tel:+491788114467">📞 +49 178 8114467</a>
+        </div>
+
+        <div class="grid">
+          <div class="card">
+            <div class="label">Adresse</div>
+            <div class="value">Untere Jakobermauer 9, 86152 Augsburg, Deutschland</div>
+          </div>
+          <div class="card">
+            <div class="label">Geschäftsführung</div>
+            <div class="value">Inhaber: Sajed Albagdadi</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="impressum card" id="impressum" aria-label="Impressum">
+      <h3>Impressum</h3>
+      <p><strong>SATAHA</strong><br>
+      Inhaber: Sajed Albagdadi<br>
+      Untere Jakobermauer 9<br>
+      86152 Augsburg<br>
+      Deutschland</p>
+
+      <p>Telefon: 0178/8114467<br>
+      E‑Mail: <a href="mailto:info@sataha.de">info@sataha.de</a></p>
+
+      <p>Umsatzsteuer‑Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: <strong>DE123456789</strong></p>
+
+      <p>Verantwortlich gemäß § 18 Abs. 2 MStV: Sajed Albagdadi, Adresse wie oben.</p>
+
+      <p style="color:#94a3b8;font-size:.95rem">Hinweis: Dies ist eine vorläufige Informationsseite. Vollständige Inhalte, AGB, Widerrufsbelehrung und Datenschutzerklärung folgen zum Shop‑Launch.</p>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> SATAHA · Alle Rechte vorbehalten</footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
