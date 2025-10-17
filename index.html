@@ -8,17 +8,21 @@
   <meta name="description" content="SATAHA – Innovative Produkte für Lifestyle, Sport & Technik. Wir sind bald für Sie da. Kontakt & Impressum." />
   <style>
     :root{
-      --bg:#0b1220; --panel:#0f172a; --muted:#94a3b8; --text:#e5e7eb; --accent:#22d3ee; --accent2:#38bdf8;
+      /* Use a light beige palette for the site background and panels */
+      --bg:#f5f5dc;       /* light beige background */
+      --panel:#f0ead6;    /* slightly darker beige for panels */
+      --muted:#555555;    /* dark grey for muted text */
+      --text:#333333;     /* dark text for better contrast on light backgrounds */
+      --accent:#22d3ee;   /* keep accent colors */
+      --accent2:#38bdf8;
     }
     *{box-sizing:border-box}
     html,body{height:100%;margin:0}
     body{
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
       color:var(--text);
-      background:
-        radial-gradient(1200px 800px at 10% 10%, rgba(56,189,248,.18), transparent),
-        radial-gradient(1000px 700px at 90% 90%, rgba(34,211,238,.16), transparent),
-        var(--bg);
+      /* Use a plain light beige background instead of dark gradients */
+      background: var(--bg);
       line-height:1.6;
     }
     header{
